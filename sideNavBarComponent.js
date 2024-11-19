@@ -3,12 +3,7 @@ class SideNavBar extends HTMLElement{
 		super();
 		let shadow = this.attachShadow({mode: 'open'});
 		const style = document.createElement('style');
-		style.textContent = /*html*/`
-		<style>
-			svg{
-				width: 100%;
-				height: 100%;
-			}
+		style.textContent = /*css*/`
 			.sideNavBar{
                 background-color: #2b3339;
                 position: fixed;
@@ -115,7 +110,7 @@ class SideNavBar extends HTMLElement{
 					transform: translateY(-2px);
 				}
 			}
-		</style>`
+		`
 		shadow.appendChild(style);
 		const container = document.createElement('div');
 		container.classList.add('sideNavBar');

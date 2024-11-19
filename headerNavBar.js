@@ -5,12 +5,7 @@ class headerNavBar extends HTMLElement{
 		let shadow = this.attachShadow({mode: 'open'});
 		const container = document.createElement('div');
 		const style = document.createElement('style');
-		style.textContent = /*html*/`
-		<style>
-			svg{
-				width: 100%;
-				height: 100%;
-			}
+		style.textContent = /*css*/`
 			.gradient-text {
 				font-family: "Press Start 2P", cursive;
 				margin-left: 2rem;
@@ -312,7 +307,7 @@ class headerNavBar extends HTMLElement{
 					left: 90%;
 				}
 			}
-		</style>`;
+		`;
 		container.classList.add('headerNavBar');
 		container.innerHTML = /*html*/`
 		<div class="gradient-text">
@@ -327,7 +322,7 @@ class headerNavBar extends HTMLElement{
 		</div>
 		<div class="icon-Div">
 			<div class="pic-container">
-				<img src="https://cdn.intra.42.fr/users/6fa19611301215aa2696010d7d4b32e4/jbortolo.png" alt="intra profile pic">
+				<img src="${this.getAttribute("img")}" alt="intra profile pic">
 			</div>
 			<div class="icon">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentcolor" style="height: 3rem; width: rem;" >
