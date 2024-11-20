@@ -74,8 +74,8 @@ class headerNavBar extends HTMLElement{
 				border-radius:50%;
 			}
 			img{
-				width: 75%;
-				height: 75%;
+				width: 4em;
+				height: 4em;
 				border-radius:50%;
 				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
 			}
