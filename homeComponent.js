@@ -58,8 +58,8 @@ class HomeComponent extends HTMLElement{
             }
             .user-info mario-tag {
                 position: absolute;
-                top: 25px;
-                right:150px;
+                top: 1.6em;
+                right:10em;
             }
 			.user-info{
 				text-align: center;
